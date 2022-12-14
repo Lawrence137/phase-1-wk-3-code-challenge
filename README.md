@@ -59,11 +59,21 @@ After launching the application on Visual Studio Code, go to the top on the part
 
 Select new terminal and a terminal should open at the botttom of the page.
 
-In the terminal, type the following ``json-server --watch db.json``. If its working, it should load and say 'watching...' on the last line.
+In the terminal, type the following
 
- Click on the link under resources which looks like this: ``http://localhost:3000/films``. You should see the same details listed in the file named db.json.
+``json-server --watch db.json``.
 
- After that go back to your application in Visual Studio Code and on the section on your left where the files are listed, right click on the file index2.html and select 'open with live server'. A window should open on your browser with the relevant information.
+ If its working, it should load and say 'watching...' on the last line.
+
+ Click on the link under resources which looks like this:
+
+  ``http://localhost:3000/films``.
+
+   You should see the same details listed in the file named db.json.
+
+ After that click on the following link:
+ 
+  `https://lawrence137.github.io/phase-1-wk-3-code-challenge/`
 
  The poster for the first movie should be displayed together with the list of films.
 
