@@ -31,7 +31,7 @@ fetch('http://localhost:3000/films')
       <li class="film item">
         ${film.title}
       
-      </li>\
+      </li>
       <li class="film item">
       <img src="${film.poster}" alt="">
     
@@ -46,20 +46,22 @@ fetch('http://localhost:3000/films')
 // by 1 and updates the frontend to reflect the change
 function buyTicket() {
   // Get the current number of available tickets
-  let tickets = document.getElementById('tickets').innerText;
-  tickets = parseInt(tickets, 10);
+  let tickets = document.getElementById('tickets').innerText
+ // tickets = parseInt(tickets, 10);
 
   // Check if the showing is sold out (if there are 0 tickets left)
   if (tickets === 0) {
     alert('Sorry, this showing is sold out.');
     return;
   }
-
+else if(tickets > 0){
+  tickets --
+}
   // Decrease the number of available tickets by 1
-  tickets -= 1;
+  
 
   // Update the frontend to reflect the change
-  document.getElementById('tickets').innerText = tickets;
+  //document.getElementById('tickets').innerText = tickets;
 }
 
 // Attach the "buyTicket" function to the "Buy Ticket" button's click event
