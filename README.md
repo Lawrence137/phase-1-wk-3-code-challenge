@@ -57,7 +57,7 @@ After its done installing type the following;
 
 After launching the application on Visual Studio Code, go to the top on the part written Terminal and right click on it.
 
-Select new terminal and a terminal should open at the botttom of the page.
+Select new terminal and a terminal should open at the bottom of the page.
 
 In the terminal, type the following
 
@@ -71,11 +71,11 @@ In the terminal, type the following
 
    You should see the same details listed in the file named db.json.
 
- After that click on the following link:
+ After making sure that the server is running click on the following link:
  
   `https://lawrence137.github.io/phase-1-wk-3-code-challenge/`
 
- The poster for the first movie should be displayed together with the list of films.
+ The poster and details of the first movie should be displayed together with the list of films.
 
 
  # Authors

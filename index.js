@@ -7,6 +7,17 @@ const description = document.getElementById('film-info'); // selects the element
 const ticketSpan = document.getElementById('ticket-num'); // selects the element with the id 'ticket-num'
 const buyTicketButton = document.getElementById('buy-ticket'); // selects the element with the id 'buy-ticket'
 
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json'); // <== Will be created later
+const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 3200; // <== You can change the port
+
+server.use(middlewares);
+server.use(router);
+
+server.listen(port);
+
 document.addEventListener("DOMContentLoaded", () => { // listens for the DOMContentLoaded event, which fires when the initial HTML document has been completely loaded and parsed
   const fetchTitle = fetch("http://localhost:3000/films"); // sends a GET request to the specified endpoint
   fetchTitle.then(response => response.json()).then(data => list(data)); // parses the response as JSON and passes it to the 'list' function
